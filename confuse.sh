@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 TABLENAME=symbols
-SYMBOL_DB_FILE="$PROJECT_DIR/symbols"
-STRING_SYMBOL_FILE="$PROJECT_DIR/func.list"
-HEAD_FILE="$PROJECT_DIR/codeObfuscation.h"
-CONFUSE_FILE="$PROJECT_DIR/confusion"
+SYMBOL_DB_FILE="$PROJECT_DIR/Pods/WJXConfusion/symbols"
+STRING_SYMBOL_FILE="$PROJECT_DIR/Pods/WJXConfusion/func.list"
+HEAD_FILE="$PROJECT_DIR/Pods/WJXConfusion/codeObfuscation.h"
+CONFUSE_FILE="$PROJECT_DIR/Pods/WJXConfusion/confusion"
 export LC_CTYPE=C
 
 #取以.m或.h结尾的文件以+号或-号开头的行 |去掉所有+号或－号|用空格代替符号|n个空格跟着<号 替换成 <号|开头不能是IBAction|用空格split字串取第二部分|排序|去重复|删除空行|删掉以init开头的行>写进func.list
