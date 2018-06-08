@@ -14,7 +14,9 @@
     pod 'WJXConfusion', '~> 1.0.0'
     end
 
-   ## 演示代码
+   ## 演示
+   在Xcode-->Target--->Build Phases--->添加Run Script
+   $PROJECT_DIR/confuse.sh
    
                          
    ## 联系我们
