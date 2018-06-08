@@ -15,8 +15,8 @@
     end
 
    ## 演示
-   在Xcode-->Target--->Build Phases--->添加Run Script
-   $PROJECT_DIR/confuse.sh
+    在Xcode-->Target--->Build Phases--->添加Run Script
+    $PROJECT_DIR/confuse.sh
    
                          
    ## 联系我们
