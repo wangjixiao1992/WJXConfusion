@@ -16,7 +16,7 @@
 
    ## 演示
     在Xcode-->Target--->Build Phases--->添加Run Script
-    $PROJECT_DIR/confuse.sh
+    $PROJECT_DIR/Pods/WJXConfusion/confuse.sh
    
                          
    ## 联系我们
