@@ -1,5 +1,5 @@
 project_path=$(cd `dirname $0`; pwd)
-project_name=Magic
+project_name=WJXAlertView
 folder_path=${project_path}/${project_name}/${project_name}/Class
 place_path=${project_path}/placeCode.h
 

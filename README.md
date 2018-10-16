@@ -4,34 +4,28 @@
     代码混淆,小概率避免被逆向!
 
 ## 版本
-    1.0.2
-    
-## 注意
-    * 建议使用编译后,新建.h文件复制所有codeObfuscation代码,删除cocopods,不然容易被拒
-    
-## 引用cocopodS 
+    1.0.3
+* 不建议使用cocopods,建议使用shell执行脚本)
 
-    source 'https://github.com/wangjixiao1992/WJXConfusion.git'
-    platform :ios, '8.0'
-    
-    target 'TargetName' do
-    pod 'WJXConfusion', '~> 1.0.2'
-    end
-
-## 演示
-    在Xcode-->Target--->Build Phases--->添加Run Script
-    $PROJECT_DIR/Pods/WJXConfusion/confuse.sh
-    
-    把你需要混淆的方法,加到func.list
-    例如:
-    sharedClient
+## 准备工作
+### 修改脚本
+*  新建文件夹
+*  放入climbMethod.sh和placeCode.h
+*  拖入要添加代码的项目
+*  修改项目参数folder_path是要添加代码的文件夹路径
+   folder_path=${project_path}/${project_name}/${project_name}/xxxx
+* 把placeCode.h拖入工程引入预编译文件 要放在靠前位置
    
-                         
-## 使用方式
-    xcode执行的时候自动执行脚本
+
+## 使用方法
+* 使用终端进入WJXConfusion文件
+* 执行:sh climbMethod.sh
    
 ## 联系我们
-    如有疑问请发送邮件.谢谢~
-    15037535383@163.com
+如有疑问请发送邮件.谢谢~
+15037535383@163.com
+
+
+
 
 
