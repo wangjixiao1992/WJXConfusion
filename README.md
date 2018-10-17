@@ -1,19 +1,36 @@
 # WJXConfusion
     
 ## 介绍
-    代码混淆,大概率避免被逆向!
+    代码混淆,大概率避免被逆向!同事实现马甲包混淆!
 
 ## 版本
     1.0.3
 
 ## 准备工作
-### 修改脚本
+### 修改脚本(低配版)
 *  新建文件夹
-*  放入climbMethod.sh和placeCode.h
-*  拖入要添加代码的项目
-*  修改项目参数folder_path是要添加代码的文件夹路径
-   folder_path=${project_path}/${project_name}/${project_name}/xxxx
-* 把placeCode.h拖入工程引入预编译文件 要放在靠前位置
+*  放入climbMethod.sh拖入要添加代码的项目
+*  工程新建.h头文件 引入工程
+*  修改项目参数文件夹路径
+ 
+   project_name=项目名字
+ 
+   folder_path=需要遍历的文件夹
+   
+* 手动删除无用参数,手动添加宏
+* 把placeCode.h的代码copy进头文件
+
+### 修改脚本(高配版)
+*  新建文件夹
+*  放入climbMethod.sh拖入要添加代码的项目
+*  工程新建.h头文件 引入工程
+*  修改项目参数文件夹路径
+ 
+   project_name=项目名字
+ 
+   folder_path=需要遍历的文件夹
+   
+   placeHeader_path=混淆头文件文件夹
    
 
 ## 使用方法
