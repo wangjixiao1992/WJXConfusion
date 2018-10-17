@@ -11,6 +11,12 @@ function filessScanning {
          echo "#define $line $ramdom" >> ${place_path}
       fi
       if [[ ${line} = -*  ]]; then
+         if [[ -d ${place_path} ]]; then
+            echo '*******************************  文件已存在  *******************************'
+         else
+            echo '*******************************  创建文件  *******************************'
+            touch ${place_path}
+         fi
          echo "#define $line $ramdom" >> ${place_path}
       fi
    done
